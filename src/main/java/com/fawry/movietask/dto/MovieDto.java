@@ -7,6 +7,8 @@ import java.util.List;
 
 @Data
 public class MovieDto {
+    @JsonProperty("id")
+    private Long id;
     @JsonProperty("Title")
     private String title;
     @JsonProperty("Year")
@@ -57,4 +59,5 @@ public class MovieDto {
     private String website;
     @JsonProperty("Response")
     private String response;
+
 }
